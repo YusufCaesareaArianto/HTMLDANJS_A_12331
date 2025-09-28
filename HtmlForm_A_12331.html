@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form - 12111</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="menu">
+      <li><a href="HtmlCssBasic_A_12331.html">Kembali ke Halaman Utama</a></li>
+      <li><a href="JSBasic_A_12331.html">Halaman Javascript</a></li>
+  </ul>
+
+  <h2>Form Pendaftaran Mahasiswa</h2>
+
+  <form onsubmit="return validateForm()">
+    <table cellspacing="4" cellpadding="4">
+
+      <tr> 
+        <td><strong>Nama Mahasiswa</strong></td>
+        <td><input required type ="text" id ="idmahasiswa" name ="namamahasiswa" size ="30"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Jenis Kelamin</strong></td>
+        <td>
+          <input required type ="radio" id="kelamin" name ="jeniskelamin" value ="Laki-laki">
+          <label for ="kelamin">Laki-laki</label>
+          <input required type ="radio" id="kelamin" name ="jeniskelamin" value ="Perempuan">
+          <label for ="kelamin">Perempuan</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Program Studi</strong></td>
+        <td>
+        <select required id ="programstudi" name ="prodi">
+          <option value ="">Pilih Prodi</option>
+          <option value ="Informatika">Informatika</option>
+          <option value ="Teknik Industri">Teknik Industri</option>
+          <option value ="Sistem Informasi">Sistem Informasi</option>
+        </select>
+      </td>
+      </tr>
+      
+      <tr>
+        <td><strong>Nomor Telepon</strong></td>
+        <td><input required type ="number" id ="nomortelepon" name ="nomortelepon"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Tanggal Lahir</strong></td>
+        <td><input required type ="date" id ="tanggallahir" name ="tanggallahir"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Email</strong></td>
+        <td><input required type ="email" id ="idemail" name ="namaemail"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Password</strong></td>
+        <td><input required type ="password" id ="idpass" name ="pass"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Hal Favorit</strong></td>
+        <td>
+          <fieldset>
+            <legend>Game</legend>
+            <input type ="checkbox" id ="Roblox" name ="game" value ="Roblox">
+            <label for ="Roblox">Roblox</label>
+            <input type ="checkbox" id ="Magicchess" name ="game" value ="Magic Chess">
+            <label for ="Magicchess">Magic Chess</label>
+            <input type ="checkbox" id ="Valorant" name ="game" value ="Valorant">
+            <label for ="Valorant">Valorant</label>
+          </fieldset>
+          <fieldset>
+            <legend>Film</legend>
+            <input type ="checkbox" id ="Drama" name ="film" value ="Drama">
+            <label for ="Drama">Drama</label>
+            <input type ="checkbox" id ="Action" name ="film" value ="Action">
+            <label for ="Action">Action</label>
+            <input type ="checkbox" id ="Romance" name ="film" value ="Romance">
+            <label for ="Romance">Romance</label>
+            <input type ="checkbox" id ="Comedy" name ="film" value ="Comedy">
+            <label for ="Comedy">Comedy</label>
+            <input type ="checkbox" id ="Horror" name ="film" value ="Horror">
+            <label for ="Horror">Horror</label>
+          </fieldset>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Deskripsi Diri</strong></td>
+        <td>
+          <textarea required id ="iddeskripsi" name ="deskripsi" rows ="4"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Foto</strong></td>
+        <td><input required type ="file" id ="foto" name ="foto"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type ="submit" id ="simpan" value ="Simpan"></td>
+      </tr>
+      
+    </table>
+  </form>
+
+  <script>
+    const validateForm = () =>alert("Data Berhasil Disimpan !");
+  </script>
+</body>
+</html>
